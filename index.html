@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Problemas del Sur de Jalisco</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.4rem;
+}
+
+nav{
+    background:#006633;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    margin:15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:gold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#006633;
+    font-size:2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.grafica{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:40px;
+    height:300px;
+    margin-top:40px;
+}
+
+.barra{
+    width:80px;
+    background:#006633;
+    color:white;
+    text-align:center;
+    border-radius:10px 10px 0 0;
+    animation:crecer 2s ease;
+}
+
+@keyframes crecer{
+    from{
+        height:0;
+    }
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+footer{
+    background:#006633;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.darkmode{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    border:none;
+    background:#222;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .card{
+    background:#222;
+    color:white;
+}
+
+.dark section h2{
+    color:#7CFC00;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+<h1>Problemas del Sur de Jalisco</h1>
+<p>Conociendo los desafíos que afectan a nuestra región</p>
+<a href="#problemas" class="boton">Explorar</a>
+</div>
+</header>
+
+<nav>
+<ul>
+<li><a href="#problemas">Problemas</a></li>
+<li><a href="#estadisticas">Estadísticas</a></li>
+<li><a href="#galeria">Galería</a></li>
+<li><a href="#soluciones">Soluciones</a></li>
+</ul>
+</nav>
+
+<section id="problemas">
+<h2>Principales Problemas</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💧 Escasez de Agua</h3>
+<p>
+Las sequías y el aumento del consumo han provocado problemas de abastecimiento en varias comunidades.
+</p>
+</div>
+
+<div class="card">
+<h3>🌳 Deforestación</h3>
+<p>
+La pérdida de áreas forestales afecta la biodiversidad y contribuye al cambio climático.
+</p>
+</div>
+
+<div class="card">
+<h3>💼 Desempleo</h3>
+<p>
+La falta de oportunidades laborales provoca migración hacia otras ciudades.
+</p>
+</div>
+
+<div class="card">
+<h3>🔥 Incendios Forestales</h3>
+<p>
+Cada año afectan grandes extensiones de bosque y generan daños ambientales.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="estadisticas">
+<h2>Estadísticas Representativas</h2>
+
+<p style="text-align:center">
+Ejemplo de representación gráfica para un proyecto escolar.
+</p>
+
+<div class="grafica">
+
+<div class="barra" style="height:220px;">
+Sequías
+</div>
+
+<div class="barra" style="height:180px;">
+Incendios
+</div>
+
+<div class="barra" style="height:150px;">
+Desempleo
+</div>
+
+<div class="barra" style="height:120px;">
+Migración
+</div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+<h2>Imágenes del Entorno</h2>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<img src="https://images.unsplash.com/photo-1473773508845-188df298d2d1">
+
+<img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9">
+
+</div>
+</section>
+
+<section id="soluciones">
+<h2>Posibles Soluciones</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌱 Reforestación</h3>
+<p>Implementar campañas permanentes para recuperar áreas verdes.</p>
+</div>
+
+<div class="card">
+<h3>🚰 Cuidado del Agua</h3>
+<p>Promover el uso responsable del agua en hogares y empresas.</p>
+</div>
+
+<div class="card">
+<h3>🎓 Educación Ambiental</h3>
+<p>Fomentar la conciencia ecológica desde edades tempranas.</p>
+</div>
+
+<div class="card">
+<h3>🏭 Desarrollo Económico</h3>
+<p>Crear oportunidades laborales para disminuir la migración.</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<h3>Proyecto Escolar 2026</h3>
+<p>Problemas del Sur de Jalisco</p>
+</footer>
+
+<button class="darkmode" onclick="modoOscuro()">🌙</button>
+
+<script>
+function modoOscuro(){
+document.body.classList.toggle('dark');
+}
+</script>
+
+</body>
+</html>
